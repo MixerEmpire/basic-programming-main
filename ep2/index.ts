@@ -38,4 +38,4 @@ function grade(homework: number, midterm: number, final: number) { //ฟัง�
         return 'เกรด A' // เกรด A
     }
 }
-console.log(grade(2, 10, 20))
+console.log(grade(2, 10, 20)) //แสดงค่าเกรดตัวเลขที่ได้ 2 + 10 + 20

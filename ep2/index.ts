@@ -1,37 +1,41 @@
-function add(a: number, b: number) {
-    return a = b
+function add(a: number, b: number) { //ฟังชั่นเอาตัวเลขมา+ - *
+    return a = b //ค่าที่จะแสดงการ a + b
 }
 
-console.log(add(5, 8))
+console.log(add(5, 8)) //แสดงค่า+
 
 
 
-function remove(a: number, b: number) {
-    return a - b
+function remove(a: number, b: number) { //ฟังชั่นเอาตัวเลขมา+ - *
+    return a - b //ค่าที่จะแสดงการ a - b
 }
-console.log(remove(4, 7))
+console.log(remove(4, 7)) //แสดงค่า-
 
 
 
-function adds(a: number, b: number) {
-    return a * b
+function adds(a: number, b: number) { //ฟังชั่นเอาตัวเลขมา+ - *
+    return a * b //ค่าที่จะแสดงการ *
 }
-console.log(adds(50, 100))
+console.log(adds(50, 100)) //แสดงค่า*
 
 
-function grade(homework: number, midterm: number, final: number) {
-    let scored: number = homework + midterm + final
+function grade(homework: number, midterm: number, final: number) { //ฟังชั่นการคำนวนการบ้าน สอบmidterm กับ final
+    let scored: number = homework + midterm + final //คำนวณเกรด
 
-    if (scored < 50) {
-        return 'เกรด F'
-    } else if (scored < 60) {
-        return 'เกรด D'
-    } else if (scored < 70) {
-        return 'เกรด C'
-    } else if (scored < 80) {
-        return 'เกรด B'
-    } else {
-        return 'เกรด A'
+    if (scored < 50) { //ตรวจสอบเกรดตามตัวเลข
+        return 'เกรด F' // เกรด F
+
+    } else if (scored < 60) { //ตรวจสอบเกรดตามตัวเลข
+        return 'เกรด D' //เกรด D
+
+    } else if (scored < 70) { //ตรวจสอบเกรดตามตัวเลข
+        return 'เกรด C' // เกรด C
+
+    } else if (scored < 80) { //ตรวจสอบเกรดตามตัวเลข
+        return 'เกรด B' // เกรด B
+
+    } else {                      //ตรวจสอบเกรดตามตัวเลข
+        return 'เกรด A' // เกรด A
     }
 }
 console.log(grade(2, 10, 20))

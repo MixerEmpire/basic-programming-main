@@ -61,3 +61,34 @@ function st(fname: string, sname: string, qname: string) {
  }
 }
 ino (19, 9000 ,20000)
+
+
+
+function คำนวณBMI (height: number, weight: number): number{
+
+  return weight / (height * height)
+}
+
+function BMI (BMI: number): {อยู่ในเกนท์: string,ภาวะเสี่ยงโรค: string} {
+  if (BMI < 18.50) {
+    return {อยู่ในเกนท์: 'น้ำหนักน้อย / ผอม', ภาวะเสี่ยงโรค: 'มากกว่าปกติ'}
+ } else if (BMI >= 18.50 && BMI <= 22.90) {
+  return {อยู่ในเกนท์: 'ปกติ (สุขภาพดี)' , ภาวะเสี่ยงโรค: 'เท่ากับคนปกติ'}
+ } else if (BMI >= 23.00 && BMI <= 24.90) {
+  return {อยู่ในเกนท์:'ท้วม / โรคอ้วนระดับ 1' , ภาวะเสี่ยงโรค: 'อันตรายระดับ1'}
+ } else if (BMI >= 25.00 && BMI <= 29.90) {
+   return {อยู่ในเกนท์:'อ้วน / โรคอ้วนระดับ 2' , ภาวะเสี่ยงโรค: 'อันตรายระดับ2'}
+ } else {
+   return {อยู่ในเกนท์: 'อ้วนมาก / โรคอ้วนระดับ 3' , ภาวะเสี่ยงโรค: 'อันตรายระดับ3'}
+
+ }
+}
+
+let height: number =1.65;
+let weight: number = 50;
+
+let BMIValue = คำนวณBMI(height, weight);
+let BMICategory = BMI(BMIValue);
+
+console.log(`BMI Value: ${BMIValue}`);
+console.log(`Category: ${BMICategory.อยู่ในเกนท์}, Risk: ${BMICategory.ภาวะเสี่ยงโรค}`);
